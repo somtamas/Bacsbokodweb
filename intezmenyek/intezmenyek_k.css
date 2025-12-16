@@ -1,0 +1,15 @@
+
+body{
+    background-image:  linear-gradient(#FFFFFF,#008080);
+    text-align: center;
+    
+
+    
+}
+#nyitvatartas
+{
+    
+    background-color: #FFFFFF;
+    border-radius: 40%;
+    float: left;
+}
