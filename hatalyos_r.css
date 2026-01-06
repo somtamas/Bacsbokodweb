@@ -1,0 +1,13 @@
+body{
+    background-image:  linear-gradient(#FFFFFF,#008080);
+    display: block; 
+    background-attachment: fixed;
+}
+
+.cim{
+    text-align: center;
+    background-color: #03a0a0;
+    margin-left: 30%;
+    margin-right: 30%;
+    color: white;
+}
