@@ -1,15 +1,46 @@
 
 body{
-    background-image:  linear-gradient(#FFFFFF,#008080);
+    background-image:  linear-gradient(#FFFFFF,#008080)  ;
     text-align: center;
-    
-
+ 
     
 }
-#nyitvatartas
+.nyitvatartas
 {
-    
+   
+    padding: 25px;
+   
+    height: 300px;
     background-color: #FFFFFF;
-    border-radius: 40%;
-    float: left;
+    border-radius: 5%;
+    margin-left: 25%;
+    margin-right: 22%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.Leiras 
+{
+   
+    padding: 25px;
+  
+    height: 300px;
+    background-color: #FFFFFF;
+    border-radius: 5%;
+    margin-left: 25%;
+    margin-right: 22%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#tartalom
+{
+
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+        
+    
+    
 }
