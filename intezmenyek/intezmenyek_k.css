@@ -2,11 +2,12 @@
 body{
     background-image:  linear-gradient(#FFFFFF,#008080)  ;
     text-align: center;
- 
+    background-attachment: fixed;
     
 }
 .nyitvatartas
 {
+    text-align: left;
    
     padding: 25px;
    
@@ -20,6 +21,7 @@ body{
 }
 .Leiras 
 {
+    text-align: left;
    
     padding: 25px;
   
@@ -43,4 +45,20 @@ body{
         
     
     
+}
+#Nytartas
+{
+    
+    font-size: 23px;
+    text-align: center;
+}
+#Leiras
+{
+    text-align: center;
+    font-size: 23px;
+}
+.tartalomkep
+{
+    margin: auto;
+    width: 104.78;
 }
