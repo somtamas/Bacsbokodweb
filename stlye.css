@@ -1,7 +1,13 @@
 body {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
+
+.headland {
+    font-family: "Headland One", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
 
 /* innentől kezdődik a fejléc helye*/
 
@@ -10,15 +16,19 @@ body {
     display: flex;
     align-items: center;
     flex-direction: row;
+    height: 120px;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 #navbar img {
-    padding-right: 10px;
+    padding: 20px 15px 20px 50px;   
 }
 
 #navbar a {
     text-decoration: none;
     color: white;
-    padding: 10px 10px;
+    padding: 25px 25px;
+    font-size: 2vw;
 }
 /* itt van a navbar vége*/
