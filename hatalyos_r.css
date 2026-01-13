@@ -20,24 +20,31 @@ body{
 /* Rendeletek */
 
 
-
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.div1 {
+.div1, .div2, .div3, .div4, .div5, .div6 {
     grid-area: 1 / 1 / 2 / 2;
     border: 1px solid black;
     width: 200px;
     background-color: white;
-
 }
 .div2 { grid-area: 1 / 2 / 2 / 3; }
 .div3 { grid-area: 2 / 1 / 3 / 2; }
 .div4 { grid-area: 2 / 2 / 3 / 3; }
 .div5 { grid-area: 3 / 1 / 4 / 2; }
 .div6 { grid-area: 3 / 2 / 4 / 3; }
+
+
+
+.rendeletek p{
+    margin-left: 10px;
+}
+    
+.rendeletek{
+    /* grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr); */
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    display: grid;
+    /* grid-auto-flow: column; */
+    margin-left: auto;
+    margin-right: auto;
+}
