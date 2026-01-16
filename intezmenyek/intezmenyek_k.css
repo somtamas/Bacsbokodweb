@@ -104,9 +104,67 @@ body{
 }
 
 }
+@media (max-width: 500px) 
+{
+
+    .tartalomkep
+{
+    margin-left: 25%;
+    margin-right: 35%;
+}
+    
+}
+@media (max-width: 400px) 
+{
+
+    .tartalomkep
+{
+    margin-left: 25%;
+    margin-right: 35%;
+    
+}
+.nyitvatartas p
+{
+    padding: 5%;
+    font-size: small;
+}
+.Leiras p
+{
+    padding: 5%;
+    font-size: small;
+}
+.nyitvatartas {
+    text-align: left;
+    padding: 12px;
+    height: min-content;
+    background-color: rgba(217, 217, 217, 0.35);
+    border-radius: 25px;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 5%;
+    margin-bottom: 5%; 
+
+}
+.Leiras 
+{
+    text-align: left;
+   
+    padding: 25px;
+  
+    height: min-content;
+    background-color: rgba(217, 217, 217, 0.35);
+    border-radius: 25px;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+h1
+{
+    font-size: large;
+}
 
 
-
-
+}
 
 
