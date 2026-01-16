@@ -12,7 +12,7 @@ body{
     padding: 25px;
     
     height: min-content; 
-    background-color: rgba(red, green, blue, alpha);
+    background-color: rgba(217, 217, 217, 0.35);
     border-radius: 25px;
     margin-left: 25%;
     margin-right: 22%;
@@ -26,7 +26,7 @@ body{
     padding: 25px;
   
     height: min-content;
-    background-color: #FFFFFF;
+    background-color: rgba(217, 217, 217, 0.35);
     border-radius: 25px;
     margin-left: 25%;
     margin-right: 22%;
@@ -61,7 +61,7 @@ body{
 .tartalomkep
 {
     margin-left: 35%;
-    margin-right: 25%;
+    margin-right: 35%;
 }
 .nyitvatartas p
 {
@@ -73,3 +73,98 @@ body{
     padding: 5%;
     font-size: x-large;
 }
+#cim
+{
+    padding: 25px;
+    height: min-content;
+    background-color: rgba(3, 164, 164, 0.37);
+    border-radius: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+@media (max-width: 940px) 
+{
+    #tartalom
+    {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .nyitvatartas p
+{
+    padding: 5%;
+    font-size: large;
+}
+.Leiras p
+{
+    padding: 5%;
+    font-size: large;
+}
+
+}
+@media (max-width: 500px) 
+{
+
+    .tartalomkep
+{
+    margin-left: 25%;
+    margin-right: 35%;
+}
+    
+}
+@media (max-width: 400px) 
+{
+
+    .tartalomkep
+{
+    margin-left: 25%;
+    margin-right: 35%;
+    
+}
+.nyitvatartas p
+{
+    padding: 5%;
+    font-size: small;
+}
+.Leiras p
+{
+    padding: 5%;
+    font-size: small;
+}
+.nyitvatartas {
+    text-align: left;
+    padding: 12px;
+    height: min-content;
+    background-color: rgba(217, 217, 217, 0.35);
+    border-radius: 25px;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 5%;
+    margin-bottom: 5%; 
+
+}
+.Leiras 
+{
+    text-align: left;
+   
+    padding: 25px;
+  
+    height: min-content;
+    background-color: rgba(217, 217, 217, 0.35);
+    border-radius: 25px;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+h1
+{
+    font-size: large;
+}
+
+
+}
+
+
