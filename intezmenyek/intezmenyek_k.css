@@ -77,7 +77,9 @@ body{
 {
     margin: auto;
     width: 50%;
-    height: 60%;
+    height: auto;
+ 
+    
 }
 
 
@@ -127,9 +129,11 @@ body{
 {
 
 #fokep
-{   margin: auto;
+{
+    margin: auto;
     width: 100%;
-    height: 60%;
+    height: auto;
+ 
     
 }
 
