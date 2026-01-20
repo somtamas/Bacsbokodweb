@@ -1,0 +1,28 @@
+body{
+    background-image:  linear-gradient(#FFFFFF,#008080);
+    display: block; 
+    background-attachment: fixed;
+}
+
+/* cim */
+
+.cim{
+    text-align: center;
+    background-color: rgba(3, 164, 164, 37%);
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 8px;
+    margin-bottom: 5%;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
