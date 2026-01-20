@@ -73,6 +73,15 @@ body{
     padding: 5%;
     font-size: x-large;
 }
+#fokep
+{
+    margin: auto;
+    width: 50%;
+    height: 60%;
+}
+
+
+
 #cim
 {
     padding: 25px;
@@ -116,6 +125,13 @@ body{
 }
 @media (max-width: 400px) 
 {
+
+#fokep
+{   margin: auto;
+    width: 100%;
+    height: 60%;
+    
+}
 
     .tartalomkep
 {
@@ -161,10 +177,24 @@ body{
 }
 h1
 {
-    font-size: large;
+    font-size: medium;
+}
+#cim
+{
+    padding: 5px;
+    height: min-content;
+    background-color: rgba(3, 164, 164, 0.37);
+    border-radius: 25px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    
 }
 
 
 }
+
 
 
