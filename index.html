@@ -7,35 +7,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Headland+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="stlye.css">
     
 </head>
 <body>
-    <header>
-        <div id="navbar" class="headland">
-            <div class="nav-item"><img src="./Képek/Bácsbokod_logó_nagy.png" alt="Bácsbokod logó"></div>
-            <div class="nav-item"><a href="./index.html">Kezdőlap</a></div>
-            <div class="nav-item"><a href="">Önkormányzat</a></div>
-            <div class="nav-item"><a href="">Településünk</a></div>
-            <div class="nav-item"><a href="">Intézmények</a></div>
-            <div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Dropdown button
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</div>         
+  <header>
+    <div id="navbar" class="headland">
+      <div class="nav-item"><img src="./Képek/Bácsbokod_logó_nagy.png" alt="Bácsbokod logó"></div>
+      <div class="nav-item"><a href="./index.html">Kezdőlap</a></div>
+      <div class="dropdown">
+        <button class="dropbtnon" onclick="onkormanyzat()">Önkormányzat</button>
+        <div class="dropdown-content" id="myDropdownon">
+          <a href="#">Adatkezelési tájékozatató</a>
+          <a href="#">Hatályos rendeletek</a>
         </div>
-    </header>
+      </div> 
+      <div class="nav-item"><a href="">Településünk</a></div>
+      <div class="nav-item"><a href="">Intézmények</a></div>  
+    </div>
+  </header>
 </div>
-    <script src="./main.js"></script>
-    <script type="text/javascript" href="js/jquery.js">
-    </script>
-    <script type="text/javascript" href="js/bootstrap.min.js">
-    </script>
+  <script src="./main.js"></script>
 </body>
 </html>
