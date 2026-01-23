@@ -12,19 +12,34 @@
 </head>
 <body>
   <header>
-    <div id="navbar" class="headland">
-      <div class="nav-item"><img src="./Képek/Bácsbokod_logó_nagy.png" alt="Bácsbokod logó"></div>
-      <div class="nav-item"><a href="./index.html">Kezdőlap</a></div>
+    <div class="navbar">
+      <div class="nav-item"><a href="#kezdőlap">Kezdőlap</a></div>
       <div class="dropdown">
-        <button class="dropbtnon" onclick="onkormanyzat()">Önkormányzat</button>
-        <div class="dropdown-content" id="myDropdownon">
-          <a href="#">Adatkezelési tájékozatató</a>
+      <div class="nav-item"><button class="dropbtn" onclick="myFunction()">Önkormányzat</button></div>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="#">Adatkezelési tájékoztató</a>
+        <a href="#">Hatályos rendeletek</a>
+      </div>
+      </div>
+      <div class="dropdown">
+        <div class="nav-item"><button class="dropbtn" onclick="myFunction2()">Településünk</button></div>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="#">Adatkezelési tájékoztató</a>
           <a href="#">Hatályos rendeletek</a>
         </div>
-      </div> 
-      <div class="nav-item"><a href="">Településünk</a></div>
-      <div class="nav-item"><a href="">Intézmények</a></div>  
-    </div>
+        </div>
+      <div class="dropdown">
+      <div class="nav-item"><button class="dropbtn3" onclick="myFunction3()">Intézmények</button></div>
+      <div class="dropdown-content3" id="myDropdown3">
+        <a href="#">Bácsbokodi kultúrház</a>
+        <a href="#">Orvosi rendelő</a>
+        <a href="#">Posta</a>
+        <a href="#">Óvoda</a>
+        <a href="#">Templom</a>
+        <a href="#">Falu múzeum</a>
+      </div>
+      </div>
+      </div>
   </header>
 </div>
   <script src="./main.js"></script>
