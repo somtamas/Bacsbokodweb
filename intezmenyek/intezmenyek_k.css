@@ -5,6 +5,11 @@ body{
     background-attachment: fixed;
     
 }
+.headland {
+    font-family: "Headland One", serif;
+    font-weight: 400;
+    font-style: normal;
+}  
 .nyitvatartas
 {
     text-align: left;
