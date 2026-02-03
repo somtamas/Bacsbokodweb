@@ -29,6 +29,10 @@ body {
   text-decoration: none;
 }
 
+#kezdolap {
+
+}
+
 .nav-item {
   
 }
@@ -47,6 +51,7 @@ body {
   /*padding: 14px 16px;*/
   background-color: inherit;
   font-family: inherit;
+  padding: 0;
 }
 
 .navbar a:hover, .dropdown:hover, .dropbtn .dropbtn:focus, .dropbtn2 .dropbtn2:focus, .dropbtn3 .dropbtn3:focus {
