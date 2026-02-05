@@ -15,24 +15,18 @@ function myFunction3() {
 
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
-    myDropdown2.classList.remove('show2');
-    myDropdown3.classList.remove('show3');
     if (myDropdown.classList.contains('show')) {
       myDropdown.classList.remove('show');
     }
   }
 
   if(!e.target.matches('.dropbtn2')) {
-    myDropdown.classList.remove('show');
-    myDropdown3.classList.remove('show3');
     if (myDropdown2.classList.contains('show2')) {
       myDropdown2.classList.remove('show2');
     }
   }
 
   if(!e.target.matches('.dropbtn3')) {
-    myDropdown2.classList.remove('show2');
-    myDropdown.classList.remove('show');
     if (myDropdown3.classList.contains('show3')) {
       myDropdown3.classList.remove('show3');
     }
