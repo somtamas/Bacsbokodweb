@@ -3,7 +3,8 @@ body{
     background-image:  linear-gradient(#FFFFFF,#008080)  ;
     text-align: center;
     background-attachment: fixed;
-    
+    margin: 0;
+   
 }
 .headland {
     font-family: "Headland One", serif;
@@ -254,6 +255,25 @@ footer
     width: 100%;
     min-height: 400px;   
     background-size: cover;
+    color: white;
+}
+#Lablecszov1
+{
+    width: min-content;
+    margin: auto;
+    padding: auto;
+    position: absolute;
+    left: 5%;
+
+}
+#Lablecszov2
+{   
+    width: min-content;
+    margin: auto;
+    padding: auto;
+    position: absolute;
+    right: 5%;
+    
 }
 
 
