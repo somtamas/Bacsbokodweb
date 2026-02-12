@@ -10,11 +10,6 @@ body{
   font-style: normal;
 }  
 
-.fokep{
-    /* padding-left: 0.5%; */
-    /* margin-left: -10px; */
-}
-
 .cim{
     text-align: center;
     background-color: rgba(3, 164, 164, 37%);
@@ -52,8 +47,8 @@ body{
     height: min-content; 
     background-color: rgba(217, 217, 217, 0.35);
     border-radius: 25px;
-    margin-left: 25%;
-    margin-right: 22%;
+    /* margin-left: 40%;
+    margin-right: 20%; */
     margin-top: 5%;
     margin-bottom: 5%;
 }
