@@ -261,7 +261,7 @@ footer
 {
     width: min-content;
     margin: auto;
-    padding: auto;
+    
     position: absolute;
     left: 5%;
 
@@ -270,24 +270,34 @@ footer
 {   
     width: min-content;
     margin: auto;
-    padding: auto;
+    
     position: absolute;
     right: 5%;
     
 }
 #Lablecszov1 p
 {
-    display: flex;                
-    justify-content: center;      
-         
-   
-    flex-wrap: wrap;
+                  
+     
 }
 #Lablecszov1 img
 {
-    display: flex;                
-    align-items: center;         
-    gap: 8px;
+    margin: 2%;
+}
+#utca
+{
+    display: flex;
+    align-items: center;
+}
+#telefonszam
+{
+    display: flex;
+    align-items: center;
+}
+#E-mail
+{
+    display: flex;
+    align-items: center;
 }
 
 
