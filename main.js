@@ -12,6 +12,14 @@ function myFunction2() {
 function myFunction3() {
   myDropdown3.classList.toggle("show3");
 }
+function myFunction4() {
+  var x = document.getElementById("topnav");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
 
 window.onclick = function(e) {
   if (!e.target.matches('.dropbtn')) {
