@@ -265,6 +265,7 @@ footer
     position: absolute;
     left: 5%;
 
+
 }
 #Lablecszov2
 {   
@@ -278,7 +279,7 @@ footer
 #Lablecszov1 p
 {
                   
-     
+    
 }
 #Lablecszov1 img
 {
@@ -299,6 +300,19 @@ footer
     display: flex;
     align-items: center;
 }
+.belsoSzov
+{
+    margin-left: 6%;
+}
+#copyright
+{   
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 5%;
+}
+
+
 
 
 
