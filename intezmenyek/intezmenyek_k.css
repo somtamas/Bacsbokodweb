@@ -260,20 +260,14 @@ footer
 #Lablecszov1
 {
     width: min-content;
-    margin: auto;
     
-    position: absolute;
-    left: 5%;
 
 
 }
 #Lablecszov2
 {   
     width: min-content;
-    margin: auto;
     
-    position: absolute;
-    right: 5%;
     
 }
 #Lablecszov1 p
@@ -304,12 +298,17 @@ footer
 {
     margin-left: 6%;
 }
-#copyright
+#lablecAlso
 {   
-    position: absolute;
+   
+
     display: flex;
     align-items: center;
-    bottom: 5%;
+    padding-top: 5%;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: center;
+    
 }
 
 
