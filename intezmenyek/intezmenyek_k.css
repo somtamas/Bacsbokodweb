@@ -257,6 +257,10 @@ footer
     background-size: cover;
     color: white;
 }
+#Lablec
+{
+
+}
 #Lablecszov1
 {
     width: min-content;
@@ -299,18 +303,28 @@ footer
     margin-left: 6%;
 }
 #lablecAlso
-{   
-   
+{
 
-    display: flex;
-    align-items: center;
-    padding-top: 5%;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    justify-content: center;
+}   
+#Lablec2
+{
+
+}
+
+
+    
+
+#telo1
+{
+
+}
+#utca1
+{
     
 }
 
+#E-mail1
+{}
 
 
 
