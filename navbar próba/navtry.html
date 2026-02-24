@@ -17,7 +17,6 @@ body {margin:0;font-family:Arial}
 }
 
 .topnav a {
-  float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -26,8 +25,11 @@ body {margin:0;font-family:Arial}
   font-size: 17px;
 }
 
+.topnav img {
+  float: left;
+}
+
 .active {
-  background-color: #04AA6D;
   color: white;
 }
 
@@ -85,9 +87,10 @@ body {margin:0;font-family:Arial}
 
 @media screen and (max-width: 600px) {
   .topnav {
+    display: block;
     justify-content: unset;
     align-items: unset;
-    flex-direction: unset;
+    flex-direction: column;
   }
   .topnav a:not(:first-child), .dropdown .dropbtn {
     display: none;
@@ -95,6 +98,9 @@ body {margin:0;font-family:Arial}
   .topnav a.icon {
     float: right;
     display: block;
+  }
+  .topnav img {
+    display: none;
   }
 }
 
