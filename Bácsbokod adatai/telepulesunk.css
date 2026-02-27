@@ -155,9 +155,14 @@ body{
         display: block;
     }
         
-    .nyitvaelsop{
+    /* .nyitvaelsop{
         margin-top: -30%;
         margin-left: 0;
+    } */
+    .nyitvaelsop {
+        margin-top: -66%;
+        margin-left: 11%;
+        margin-right: 8%;
     }
 }
 
