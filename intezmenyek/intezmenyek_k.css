@@ -247,7 +247,6 @@ h1
 
 footer
 {
-    
     background-image: url(/Képek/Lableckep.PNG);
     background-size: cover;      
     background-position: center; 
@@ -257,28 +256,7 @@ footer
     background-size: cover;
     color: white;
 }
-#Lablec
-{
-
-}
-#Lablecszov1
-{
-   
-    
-
-
-}
-#Lablecszov2
-{   
-   
-    
-    
-}
-#Lablecszov1 p
-{
-                  
-    
-}
+ 
 #Lablecszov1 img
 {
     margin: 2%;
@@ -309,16 +287,14 @@ footer
 #Lablec2
 {
     display: flex;
-    flex-direction: column;
     text-align: left;
-    
+    flex-direction: column;
     justify-content: center;
-    align-items: anchor-center;
+    align-items: flex-start;
+    margin: auto;
 }
-#lablec2h1
-{
 
-}
+
 
 .parent {
     display: grid;
@@ -332,6 +308,36 @@ footer
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+@media (max-width: 750px) 
+{
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+        }
+        #Lablec2
+        {
+        padding-top: 10%;
+        display: block;
+        text-align: center;
+        padding-bottom: 10%;
+        }
+        #elerhetosegek
+        {
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .belsoSzov {
+             margin-left: 0%; 
+        }
+        
+        
+
+
+
 }
 
 
