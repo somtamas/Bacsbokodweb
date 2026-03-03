@@ -118,6 +118,13 @@ body{
     .nyitvamasodikp{
         font-size: 20px;
     }
+    .kartyap{
+        padding-top: 0;
+        margin: 0;
+    }
+    .kartyaszoveg{
+        margin: 1%;
+    }
 }
 
 
@@ -172,7 +179,7 @@ body{
 @media (max-width: 875px)  {
 
     .nyitvatartas p {
-      padding: 5%;
+      /* padding: 5%; */
       font-size: large;
     }
     
