@@ -9,7 +9,7 @@ body {
     font-style: normal;
 }  
 
-/* innentől kezdődik a fejléc helye*/
+/*innentől kezdődik a fejléc helye
 
 .navbar {
   overflow: hidden;
@@ -24,7 +24,6 @@ body {
   float: left;
   color: white;
   text-align: center;
-  /*padding: 47px 30px*/;
   text-decoration: none;
   font-size: 2vw;
 }
@@ -94,16 +93,16 @@ body {
   .navbar a:not(:first-child), .dropdown .dropbtn {
     display: none;
   }
-  /*.navbar a.icon {
+  .navbar a.icon {
     float: right;
     display: block;
-  }*/
+  }
   .navbar.responsive {position: relative;}
-  /*.navbar.responsive .icon {
+  .navbar.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
-  }*/
+  }
   .navbar.responsive a {
     float: none;
     display: block;
@@ -118,4 +117,4 @@ body {
   }
 }
 
-/* itt van a navbar vége*/
+itt van a navbar vége*/

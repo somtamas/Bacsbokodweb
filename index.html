@@ -8,41 +8,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Headland+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stlye.css">
-    
+    <link rel="stylesheet" href="./navbar próba/navbar.css">
 </head>
 <body class="headland">
-  <header>
-    <div class="navbar" id="topnav">
-      <div class="nav-item"><img src="./Képek/Bácsbokod_logó_nagy.png" alt="Bácsbokod logó" id="logo"></div>
-      <div class="nav-item" id="kezdolap"><a href="#kezdőlap">Kezdőlap</a></div>
-      <div class="dropdown">
-      <div class="nav-item"><button class="dropbtn" onclick="myFunction()">Önkormányzat</button></div>
-      <div class="dropdown-content" id="myDropdown">
-        <a href="#">Adatkezelési tájékoztató</a>
-        <a href="#">Hatályos rendeletek</a>
-      </div>
-      </div>
-      <div class="dropdown">
-        <div class="nav-item"><button class="dropbtn2" onclick="myFunction2()">Településünk</button></div>
-        <div class="dropdown-content2" id="myDropdown2">
-          <a href="#">Galéria</a>
-          <a href="#">Bácsbokod</a>
-        </div>
-        </div>
-      <div class="dropdown">
-      <div class="nav-item"><button class="dropbtn3" onclick="myFunction3()">Intézmények</button></div>
-      <div class="dropdown-content3" id="myDropdown3">
-        <a href="#">Bácsbokodi kultúrház</a>
-        <a href="#">Orvosi rendelő</a>
-        <a href="#">Posta</a>
-        <a href="#">Óvoda</a>
-        <a href="#">Templom</a>
-        <a href="#">Falu múzeum</a>
-      </div>
-      </div>
-      </div>
-  </header>
-    <!--<a href="javascript:void(0);" style="font-size:55px; text-decoration: none; color: black;" class="icon" onclick="myFunction()">&#709;</a>-->
+    <div class="topnav" id="myTopnav">
+  <div><img src="../Képek/Bácsbokod_logó_nagy.png" alt=""></div>
+  <a href="../index.html" class="active">Kezdőlap</a>
+  <div class="dropdown flex-item">
+    <button class="dropbtn">Önkormányzat</button>
+    <div class="dropdown-content">
+      <a href="../Bácsbokod adatai/adatkezeles.html">Adatkezelési tájékoztató</a>
+      <a href="../Bácsbokod adatai/hatalyos_r.html">Hatályos rendeletek</a>
+    </div>
+  </div> 
+  <a href="../Bácsbokod adatai/telepulesunk.html" class="active">Településünk</a> 
+  <div class="dropdown flex-item">
+    <button class="dropbtn">Intézmények</button>
+    <div class="dropdown-content">
+      <a href="../intezmenyek/kulturhaz.html">Bácsbokodi kultúrház</a>
+      <a href="../intezmenyek/OrvosiRendelo.html">Orvosi rendelő</a>
+      <a href="../intezmenyek/Posta.html">Posta</a>
+      <a href="../intezmenyek/Ovoda.html">Óvoda</a>
+      <a href="../intezmenyek/Templom.html">Templom</a>
+      <a href="../intezmenyek/Falumuzeum.html">Falu múzeum</a>
+    </div>
+  </div> 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
 
 <footer id="Lablec">
@@ -50,7 +41,17 @@
     <img src="/Képek/lablec2.PNG" alt="">
   </div>
 </footer>
-<script src="./main.js"></script>
+<script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<!--<script src="./main.js"></script>-->
 </body>
 
 

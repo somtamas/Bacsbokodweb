@@ -8,8 +8,33 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Headland+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="intezmenyek_k.css">
+    <link rel="stylesheet" href="../navbar próba/navbar.css">
 </head>
 <body  class="headland">
+    <div class="topnav" id="myTopnav">
+  <div><img src="../Képek/Bácsbokod_logó_nagy.png" alt=""></div>
+  <a href="../index.html" class="active">Kezdőlap</a>
+  <div class="dropdown flex-item">
+    <button class="dropbtn">Önkormányzat</button>
+    <div class="dropdown-content">
+      <a href="../Bácsbokod adatai/adatkezeles.html">Adatkezelési tájékoztató</a>
+      <a href="../Bácsbokod adatai/hatalyos_r.html">Hatályos rendeletek</a>
+    </div>
+  </div> 
+  <a href="../Bácsbokod adatai/telepulesunk.html" class="active">Településünk</a> 
+  <div class="dropdown flex-item">
+    <button class="dropbtn">Intézmények</button>
+    <div class="dropdown-content">
+      <a href="../intezmenyek/kulturhaz.html">Bácsbokodi kultúrház</a>
+      <a href="../intezmenyek/OrvosiRendelo.html">Orvosi rendelő</a>
+      <a href="../intezmenyek/Posta.html">Posta</a>
+      <a href="../intezmenyek/Ovoda.html">Óvoda</a>
+      <a href="../intezmenyek/Templom.html">Templom</a>
+      <a href="../intezmenyek/Falumuzeum.html">Falu múzeum</a>
+    </div>
+  </div> 
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
     
    
 <div id="cim">
@@ -62,5 +87,15 @@
 
 
 </div>
+<script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script> 
 </body>
 </html>
