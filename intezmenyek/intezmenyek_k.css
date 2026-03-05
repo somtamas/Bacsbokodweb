@@ -293,9 +293,6 @@ footer
     align-items: flex-start;
     margin: auto;
 }
-
-
-
 .parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -333,15 +330,4 @@ footer
         .belsoSzov {
              margin-left: 0%; 
         }
-        
-        
-
-
-
 }
-
-
-
-
-
-
