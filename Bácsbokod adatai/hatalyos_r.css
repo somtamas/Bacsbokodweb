@@ -27,11 +27,13 @@ body{
     width: 350px;
     height: 200px;
     background-color: white;
-
     opacity: 0.8;
-    /* filter: blur(1px); */
     border-radius: 20px;
 
+}
+
+.rendeletekcim{
+    font-size: larger
 }
 
 .rendeletekkep{
@@ -45,6 +47,9 @@ body{
 .rendeletek p{
     margin-left: 10px;
 }
+.rendeletekp{
+    width: 200px;
+}
     
 .rendeletek{
     display: grid;
@@ -56,7 +61,7 @@ body{
     width: 700px;
     place-items: center;
     padding: 80px 60px;
-    
+    padding-bottom: 200px;
 }
 
 footer
@@ -144,4 +149,22 @@ footer
             .belsoSzov {
                  margin-left: 0%; 
             }
+    }
+    @media (max-width: 900px) {
+        .div1, .div2, .div3, .div4, .div5, .div6 {
+            width: 300px;
+            height: 150px;        
+        }
+        
+        .rendeletekkep{
+            padding-right: 0.5%;
+            height: 30px;
+            width: 40px;
+            padding-top: 13px;
+        }
+        
+        
+        .rendeletek p{
+            /* font-size: 3px; */
+        }
     }
