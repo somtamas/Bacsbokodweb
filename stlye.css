@@ -210,10 +210,62 @@ footer
 
 /* Galéria */
 
+
+
+/* A galéria rácsa */
+.gallery-container {
+  display: grid;
+  /* Automatikus oszlopszám: minimum 280px széles kártyák */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* A kártya stílusa */
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden; /* Hogy a kép ne lógjon ki a lekerekítésnél */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effekt: a kártya kicsit megemelkedik */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* Kép beállításai */
+.card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Kitölti a helyet torzítás nélkül */
+  display: block;
+}
+
+/* Szöveges rész a kép alatt */
+.card-content {
+  padding: 15px;
+  text-align: center;
+  border-top: 1px solid #f0f0f0;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: 600;
+}
+ 
 .vonal {
   border: none;
-  border-top: 2px solid black;
-  margin: 3%;
+  border-top: 3px solid black;
+  margin: 1%;
   width: 26%;
 }
 .galeriacim
@@ -225,10 +277,3 @@ footer
 {
   background-color: rgba(255, 255, 255,75%);
 }
-.galeriakep
-{
-  margin: 5%;
-  width: 200px;
-}
-
-
