@@ -7,117 +7,32 @@ body {
     font-family: "Headland One", serif;
     font-weight: 400;
     font-style: normal;
-}  
+} 
 
-/*innentől kezdődik a fejléc helye
-
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  display: flex;
-  justify-content: center;
-  height: 120px;
-  text-align: center;
-}
-
-.navbar a {
-  float: left;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 2vw;
-}
-
-#kezdolap {
-
-}
-
-.nav-item {
-  align-self: center;
-  padding: 0px 10px 0px 10px;
-}
-
-.nav-item img {
-  max-width: 100%;
-}
-
-.dropdown {
-  display: flex;
-  float: left;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
-}
-
-.dropbtn, .dropbtn2, .dropbtn3 {
-  cursor: pointer;
-  font-size: 2vw;
-  border: none;
-  outline: none;
-  color: white;
-  background-color: inherit;
-  font-family: inherit;
-}
-
-.navbar a:hover, .navbar button:hover, .dropbtn .dropbtn:focus, .dropbtn2 .dropbtn2:focus, .dropbtn3 .dropbtn3:focus {
-  background-color: red;
-}
-
-.dropdown-content, .dropdown-content2, .dropdown-content3 {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  z-index: 1;
-}
-
-.dropdown-content a, .dropdown-content2 a, .dropdown-content3 a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.programok h1{
   text-align: left;
-  font-size: 1.5vw;
+  background-color: rgb(3, 164, 164, 0.37);
+  padding: 20px;
+  margin: 0px 50px;
+  border-radius: 25px;
+  width: 225px;
+  height: 85px;
 }
 
-.dropdown-content a:hover, .dropdown-content2 a:hover, .dropdown-content3 a:hover {
-  background-color: #ddd;
+.programok p{
+  margin: 20px;
 }
 
-.show, .show2, .show3 {
-  display: block;
+.programok-item {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white; /*rgb-vel halványabbra*/
+  text-align: justify;
+  margin: 50px;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
-  .navbar a.icon {
-    float: right;
-    display: block;
-  }
-  .navbar.responsive {position: relative;}
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .navbar.responsive .dropdown {float: none;}
-  .navbar.responsive .dropdown-content {position: relative;}
-  .navbar.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
-}
-
-itt van a navbar vége*/
 
 /* lablec*/
 
