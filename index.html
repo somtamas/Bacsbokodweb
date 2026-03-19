@@ -113,7 +113,7 @@
   
   <div class="card">
     <div class="card-image">
-      <img src="/Képek/foGaleria6.png" alt="Horgásztó">
+      <img onclick="openModal()" src="/Képek/foGaleria6.png" alt="Horgásztó">
     </div>
     <div class="card-content">
       
@@ -193,7 +193,7 @@
   </div>
 
   <div class="hozzaszolas">
-    <img src="" alt="">
+    <img src="/Képek/profilkep.png" alt="">
     <h2>Nagy János</h2>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam sed ipsum facere expedita ipsa. 
       Id esse asperiores magni maiores praesentium deleniti vero corrupti. Temporibus illum explicabo aperiam enim eum culpa?</p>
@@ -201,7 +201,7 @@
   </div>
 
   <div class="hozzaszolas">
-    <img src="" alt="">
+    <img src="/Képek/profilkep.png" alt="">
     <h2>Ibolya Mária</h2>
 
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate atque adipisci voluptatibus eaque aliquam molestias quos omnis.
@@ -211,13 +211,26 @@
 
 
 
-
-
-
-
-
 </div>
 
+<!-- Modál háttér -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  
+  <div class="modal-content">
+    <!-- Diák -->
+    <div class="mySlides">
+      <img src="Képek/Bacsbokodi kulturhaz.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <img src="Képek/foGaleria1.jpg" style="width:100%">
+    </div>
+
+    <!-- Navigációs gombok -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</div>
 
 
 
@@ -294,6 +307,6 @@
 }
 </script>
 <script src="./slideshow.js"></script>
-<!--<script src="./main.js"></script>-->
+<script src="/main.js"></script>
 </body>
 </html>

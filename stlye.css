@@ -187,6 +187,7 @@ footer
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5%;
 }
 #Galeria
 {
@@ -221,10 +222,11 @@ footer
 }
 #HozzaszolasCim p
 {
-  margin: 5px;
+  margin: 15px;
 }
 .hozzaszolas
 {
+  text-align: left;
   margin: 5%;
   padding: 5%;
   background-color: #777372;
@@ -237,3 +239,39 @@ footer
 {
   color: white;
 }
+
+
+
+
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  display: flex;
+  margin-top: 10%;
+}
+
+.mySlides { display: none; }
+
+/* Navigáció */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+}
+.next { right: 0; }
+.close { position: absolute; right: 25px; top: 10px; color: white; font-size: 35px; cursor: pointer; }
+
+
