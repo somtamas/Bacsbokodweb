@@ -1,42 +1,30 @@
-var myDropdown = document.getElementById("myDropdown");
-var myDropdown2 = document.getElementById("myDropdown2");
-var myDropdown3 = document.getElementById("myDropdown3");
-function myFunction() {
-  myDropdown.classList.toggle("show");
+
+
+ slideIndex = 1;
+
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+  showSlides(slideIndex);
 }
 
-function myFunction2() {
-  myDropdown2.classList.toggle("show2");
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
 }
 
-function myFunction3() {
-  myDropdown3.classList.toggle("show3");
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
-function myFunction4() {
-  var x = document.getElementById("topnav");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar";
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
+  slides[slideIndex-1].style.display = "block";
 }
 
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
 
-  if(!e.target.matches('.dropbtn2')) {
-    if (myDropdown2.classList.contains('show2')) {
-      myDropdown2.classList.remove('show2');
-    }
-  }
 
-  if(!e.target.matches('.dropbtn3')) {
-    if (myDropdown3.classList.contains('show3')) {
-      myDropdown3.classList.remove('show3');
-    }
-  }
-}
