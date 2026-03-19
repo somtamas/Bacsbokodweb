@@ -9,7 +9,7 @@ body {
     font-style: normal;
 } 
 
-.programok h1{
+#program-cim{
   text-align: left;
   background-color: rgb(3, 164, 164, 0.37);
   padding: 20px;
@@ -19,8 +19,20 @@ body {
   height: 85px;
 }
 
+#galeriafocim {
+  text-align: left;
+  background-color: rgb(3, 164, 164, 0.37);
+  padding: 20px;
+  margin: 0px 50px 50px 50px;
+  border-radius: 25px;
+  width: 170px;
+  height: 85px;
+}
+
 .programok p{
   margin: 20px;
+  font-size: clamp(1rem, 1.25vw, 2rem);
+  text-align: center;
 }
 
 .programok-item {
@@ -29,8 +41,36 @@ body {
   border-style: solid;
   border-width: 1px;
   border-color: white; /*rgb-vel halványabbra*/
-  text-align: justify;
+  text-align: center;
   margin: 50px;
+}
+
+@media (max-width: 800px) {
+  .programok img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .programok-item {
+    flex-direction: column;
+  }
+
+  #program-cim {
+    text-align: center;
+    margin: 50px auto;
+  }
+
+  #galeriafocim {
+    text-align: center;
+    margin: 50px auto;
+  }
+
+  .programok img {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 
