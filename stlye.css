@@ -295,8 +295,11 @@ footer
 
 .modal-content {
   display: flex;
-  margin-top: 10%;
+ 
+  justify-content: center;
+  margin-top: 7%;
 }
+
 
 .mySlides { display: none; }
 
