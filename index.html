@@ -104,7 +104,7 @@
   
   <div class="card">
     <div class="card-image">
-      <img src="/Képek/foGaleria8 (1).png" alt="Horgásztó">
+      <img onclick="openModal()"src="/Képek/galeriakep6.png" alt="Horgásztó">
     </div>
     <div class="card-content">
       
@@ -115,7 +115,7 @@
  
   <div class="card">
     <div class="card-image">
-      <img src="/Képek/foGaleria7 (1).png" alt="Falu">
+      <img onclick="openModal()"src="/Képek/galeriakep4.png" alt="Falu">
     </div>
     <div class="card-content">
       
@@ -130,7 +130,7 @@
   
   <div class="card">
     <div class="card-image">
-      <img onclick="openModal()" src="/Képek/foGaleria6.png" alt="Horgásztó">
+      <img onclick="openModal()" src="/Képek/galeriakep1.png" alt="Horgásztó">
     </div>
     <div class="card-content">
       
@@ -140,7 +140,7 @@
  
   <div class="card">
     <div class="card-image">
-      <img src="/Képek/foGaleria5 (2).png" alt="Falu">
+      <img onclick="openModal()"src="/Képek/galeriakep3.png" alt="Falu">
     </div>
     <div class="card-content">
       
@@ -155,7 +155,7 @@
   
   <div class="card">
     <div class="card-image">
-      <img src="/Képek/foGaleria4.jpg" alt="Horgásztó">
+      <img onclick="openModal()"src="/Képek/galeriakep7.png" alt="Horgásztó">
     </div>
     <div class="card-content">
       
@@ -165,7 +165,7 @@
  
   <div class="card">
     <div class="card-image">
-      <img src="/Képek/foGaleria3.png" alt="Falu">
+      <img onclick="openModal()"src="/Képek/galeriakep5.png" alt="Falu">
     </div>
     <div class="card-content">
       
@@ -180,7 +180,7 @@
   
   <div class="card">
     <div class="card-image">
-      <img src="/Képek/foGaleria2.jpg" alt="Horgásztó">
+      <img onclick="openModal()"src="/Képek/galeriakep4.png" alt="Horgásztó">
     </div>
     <div class="card-content">
       
@@ -190,7 +190,7 @@
  
   <div class="card">
     <div class="card-image">
-      <img src="/Képek/foGaleria1.jpg" alt="Falu">
+      <img onclick="openModal()"src="/Képek/galeriakep6.png" alt="Falu">
     </div>
     <div class="card-content">
       
@@ -232,38 +232,44 @@
 
 <!-- Modál háttér -->
 <div id="myModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
+  <span class="close" onclick="closeModal()">
+    
+    &times;</span>
   
   <div class="modal-content">
+
+
+
+    
     <!-- Diák -->
-    <div class="mySlides">
+    <div class="modalSlide">
+      <img src="Képek/galeriakep1.png" style="width:100%">
+    </div>
+    <div class="modalSlide">
+      <img src="Képek/galeriakep2.png" style="width:100%">
+    </div>
+    <div class="modalSlide">
+      <img src="Képek/galeriakep3.png" style="width:100%">
+    </div>
+    <div class="modalSlide">
+      <img src="Képek/galeriakep4.png" style="width:100%">
+    </div>
+    <div class="modalSlide">
+      <img src="Képek/galeriakep5.png" style="width:100%">
+    </div>
+    <div class="modalSlide">
+      <img src="Képek/galeriakep6.png" style="width:100%">
+    </div>
+    <div class="modalSlide">
+      <img src="Képek/galeriakep7.png" style="width:100%">
+    </div>
+    <div class="modalSlide">
       <img src="Képek/Bacsbokodi kulturhaz.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <img src="Képek/foGaleria8 (1).png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <img src="Képek/foGaleria7 (1).png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <img src="Képek/foGaleria6.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <img src="Képek/foGaleria5 (2).png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <img src="Képek/foGaleria4.jpg" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <img src="Képek/foGaleria3.png" style="width:100%">
-    </div>
-    <div class="mySlides">
-      <img src="Képek/foGaleria2.jpg" style="width:100%">
     </div>
 
     <!-- Navigációs gombok -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" onclick="plusModalSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusModalSlides(1)">&#10095;</a>
   </div>
 </div>
 
