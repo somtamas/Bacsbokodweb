@@ -1,12 +1,9 @@
 body{
-    background-image:  linear-gradient(#FFFFFF,#008080);
-    display: block; 
-    background-attachment: fixed;
-    color: #005050;
-    background-image: url('/Képek/fashatter.png');
+    color: #004242;
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,0.03), rgba(255,255,255,0.03) 2px,transparent 2px,transparent 10px),
+    linear-gradient(180deg, #00c6ff, #2c5364, #0f2027);
     background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 
@@ -21,48 +18,73 @@ body{
 
 /* Rendeletek */
 
-
-.div1, .div2, .div3, .div4, .div5, .div6 {
-    border: 1px solid rgb(255, 255, 255);
-    width: 350px;
-    height: 200px;
-    background-color: white;
-    opacity: 0.8;
-    border-radius: 20px;
-
-}
-
+/* 
 .rendeletekcim{
     font-size: larger
-}
+} */
 
-.rendeletekkep{
+/* .rendeletekkep{
     padding-right: 0.5%;
     height: 40px;
     width: 50px;
     padding-top: 13px;
-}
+} */
 
-
+/* 
 .rendeletek p{
     margin-left: 10px;
 }
 .rendeletekp{
     width: 200px;
-}
+} */
     
 .rendeletek{
     display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
     margin: auto;
-    width: 700px;
-    place-items: center;
-    padding: 80px 60px;
-    padding-bottom: 200px;
+    width: 800px;
+    padding: 80px 40px;
+    gap: 40px;
 }
+
+.kartya{
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    padding: 40px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 20 rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.kartya:hover{
+    transform: translateY(-5px);
+}
+
+.kartyafejlec{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.kartya p{
+    margin: 0;
+    color: #2c5364;
+    font-size: 0.9rem;
+}
+
+.kartya h3{
+    margin: 0;
+    color: #2c5364;
+}
+
+.kartyakep{
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+/* lábléc */
 
 footer
     {
@@ -125,8 +147,17 @@ footer
         justify-content: center;
         align-items: flex-start;
     }
-    @media (max-width: 750px) 
-    {
+
+
+
+@media (max-width: 700px) {
+    .rendeletek {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 750px) {
         .parent {
             display: grid;
             grid-template-columns: repeat(1, 1fr);
@@ -150,21 +181,16 @@ footer
                  margin-left: 0%; 
             }
     }
-    @media (max-width: 900px) {
-        .div1, .div2, .div3, .div4, .div5, .div6 {
-            width: 300px;
-            height: 150px;        
-        }
-        
-        .rendeletekkep{
+@media (max-width: 900px) {
+        /* .rendeletekkep{
             padding-right: 0.5%;
             height: 30px;
             width: 40px;
             padding-top: 13px;
         }
+         */
         
-        
-        .rendeletek p{
+        /* .rendeletek p{ */
             /* font-size: 3px; */
-        }
-    }
+        /* } */
+}
