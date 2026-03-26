@@ -1,16 +1,22 @@
-const mysql = require('mysql2');
+const express = require('express');
+const app = express();
+const mssql = require("mssql");
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: ''
-});
+app.get('/', function (req, res) {
+const config = {
+    user: 'root',
+    password: '',
+    server: 'localhost',
+    database: 'geek'
+};
 
-connection.connect((err) => {
-  if (err) {
-    console.error('Connection failed:', err);
-    return;
-  }
-  console.log('Connected to database!');
+mssql.connect(config, function (err) {
+    let request = new mssql.Request();
+    request.query('select * from proflesdatabase',
+    function (err, records) {
+    if (err) 
+      console.log(err)
+      res.send(records);
+    });
+  });
 });
