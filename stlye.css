@@ -237,7 +237,7 @@ footer
 {
     border: none;
     border-top: 3px solid black;
-    margin: 1%;
+    margin: 5%;
     width: 59%;
     display: inline-block;
 }
@@ -295,13 +295,22 @@ footer
 
 .modal-content {
   display: flex;
-  margin-top: 10%;
+ 
+  justify-content: center;
+ 
 }
+
 
 .mySlides { display: none; }
 
 /* Navigáció */
-.prev, .next {
+
+
+.next { right: 10%; }
+.close { position: absolute; right: 25px; top: 10px; color: white; font-size: 35px; cursor: pointer; }
+
+.prev
+{
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -310,8 +319,17 @@ footer
   font-weight: bold;
   font-size: 20px;
   user-select: none;
+  margin-right: 87%;
 }
-.next { right: 0; }
-.close { position: absolute; right: 25px; top: 10px; color: white; font-size: 35px; cursor: pointer; }
-
-
+.next
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+  margin-right: 5%;
+}

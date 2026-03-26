@@ -1,29 +1,36 @@
 
+let modalSlideIndex = 1;
 
- slideIndex = 1;
-
-function openModal() {
+function openModal(startIndex = 1) {
   document.getElementById("myModal").style.display = "block";
-  showSlides(slideIndex);
+  modalSlideIndex = startIndex;
+  showModalSlides(modalSlideIndex);
 }
 
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
 }
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusModalSlides(n) {
+  showModalSlides(modalSlideIndex += n);
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+function showModalSlides(n) {
+  const slides = document.querySelectorAll("#myModal .modalSlide");
+  if (slides.length === 0) {
+    return;
   }
-  slides[slideIndex-1].style.display = "block";
+  if (n > slides.length) {
+    modalSlideIndex = 1;
+  } else if (n < 1) {
+    modalSlideIndex = slides.length;
+  } else {
+    modalSlideIndex = n;
+  }
+  slides.forEach((slide) => {
+    slide.style.display = "none";
+  });
+  slides[modalSlideIndex - 1].style.display = "block";
 }
 
 
