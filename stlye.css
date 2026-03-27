@@ -32,7 +32,8 @@ body {
 .programok p{
   margin: 20px;
   font-size: clamp(1rem, 1.25vw, 2rem);
-  text-align: center;
+  text-align: justify;
+  vertical-align: middle;
 }
 
 .programok-item {
