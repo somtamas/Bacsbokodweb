@@ -208,11 +208,6 @@ h1
 
 /*innen slide show van */
 
-
-* {
-    box-sizing:border-box
-}
-
 .mySlides {
     display: none
 }
@@ -226,9 +221,10 @@ h1
   position: relative;
   margin: auto;
   padding: 20px;
+  box-sizing:border-box
 }
 
-.prev, .next {
+.prev2, .next2 {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -243,16 +239,16 @@ h1
   user-select: none;
 }
 
-.prev {
+.prev2 {
     
 }
 
-.next {
+.next2 {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
+.prev2:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
@@ -264,7 +260,7 @@ h1
   top: 0;
 }
 
-.slideshow-container .dot {
+.dot {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -290,12 +286,7 @@ h1
 }
 
 @media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    .prev2, .next2, .text {font-size: 11px}
 }
 
 /* eddig van a slideshow
