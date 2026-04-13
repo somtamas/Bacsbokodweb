@@ -206,11 +206,6 @@ h1
 
 /*innen slide show van */
 
-
-* {
-    box-sizing:border-box
-}
-
 .mySlides {
     display: none
 }
@@ -224,6 +219,7 @@ h1
   position: relative;
   margin: auto;
   padding: 20px;
+  box-sizing:border-box
 }
 
 .prev2, .next2 {
@@ -262,7 +258,7 @@ h1
   top: 0;
 }
 
-.slideshow-container .dot {
+.dot {
   cursor: pointer;
   height: 15px;
   width: 15px;

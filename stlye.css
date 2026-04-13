@@ -345,10 +345,7 @@ footer
 }
 @media (max-width: 750px) 
 {
-  .galerikepek
-{
-  padding-top: 15%;
-}
+
 
 
 }
@@ -356,7 +353,7 @@ footer
 {
   .galerikepek
 {
-  padding-top: 46%;
+  padding-top: 20%;
 }
 
 
@@ -365,8 +362,24 @@ footer
 {
   .galerikepek
 {
-  padding-top: 90%;
+  padding-top:  48%;
 }
 
 
+}
+#kereso
+{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+#keresokep
+{
+  width: 45px;
+}
+#input
+{
+  width: 196px;
+  height: 36px;
 }
