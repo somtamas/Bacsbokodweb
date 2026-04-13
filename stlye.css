@@ -32,7 +32,8 @@ body {
 .programok p{
   margin: 20px;
   font-size: clamp(1rem, 1.25vw, 2rem);
-  text-align: center;
+  text-align: justify;
+  vertical-align: middle;
 }
 
 .programok-item {
@@ -295,6 +296,7 @@ footer
 
 .modal-content {
   display: flex;
+
  
   justify-content: center;
  
@@ -332,4 +334,48 @@ footer
   font-size: 20px;
   user-select: none;
   margin-right: 5%;
+}
+.galerikepek
+{
+  padding-top: 0;
+}
+@media (max-width: 750px) 
+{
+
+
+
+}
+@media (max-width:  500px) 
+{
+  .galerikepek
+{
+  padding-top: 20%;
+}
+
+
+}
+@media (max-width:  400px) 
+{
+  .galerikepek
+{
+  padding-top:  48%;
+}
+
+
+}
+#kereso
+{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+#keresokep
+{
+  width: 45px;
+}
+#input
+{
+  width: 196px;
+  height: 36px;
 }
