@@ -363,3 +363,19 @@ footer
 
 
 }
+#kereso
+{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+#keresokep
+{
+  width: 45px;
+}
+#input
+{
+  width: 196px;
+  height: 36px;
+}
