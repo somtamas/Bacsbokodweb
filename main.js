@@ -32,6 +32,28 @@ function showModalSlides(n) {
   });
   slides[modalSlideIndex - 1].style.display = "block";
 }
+// kereső//
+
+function kereso()
+{
+  let adatok = ["Adatkezelési tájékoztató", "Hatályos rendeletek","Bácsbokodi Kultúrház","Háziorvosi rendelő","Posta","Óvoda","Templom","Falumúzeum","Galéria","Programok"]
+
+
+  szo = document.getElementById("input").value
+
+  let talalatok = adatok.filter(adatok=>adatok.toLocaleLowerCase().includes(szo.toLocaleLowerCase()))
+  console.log(talalatok)
+  
+  
+
+
+
+
+
+}
+
+
+
 
 
 
