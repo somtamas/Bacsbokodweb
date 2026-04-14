@@ -1,42 +1,16 @@
-// const express = require('express');
-// const app = express();
-const mysql = require("mysql");
-
-// app.get('/', function (req, res) {
-// const config = {
-//     user: 'root',
-//     password: '',
-//     server: 'localhost',
-//     database: 'geek'
-// };
-
-// mysql.connect(config, function (err) {
-//     let request = new mysql.Request();
-//     request.query('select * from proflesdatabase',
-//     function (err, records) {
-//     if (err) 
-//       console.log(err)
-//       res.send(records);
-//     });
-//   });
-// });
-
-
-let username = document.getElementById('nevinput');
-let password = document.getElementById('jelszoinput');
+let mysql = require('mysql');
 
 let con = mysql.createConnection({
   host: "localhost",
-  user: "yourusername",
-  password: "yourpassword"
+  user: "root",
+  password: "",
+  database: "profiles"
 });
 
 con.connect(function(err) {
   if (err) throw err;
-  console.log("Connected!");
-  let sql = "INSERT INTO customers (name, address) VALUES (username, password)";
-  con.query(sql, function (err, result) {
+  con.query("SELECT * FROM profiles", function (err, result, fields) {
     if (err) throw err;
-    console.log("Sikeres betöltés!");
+    console.log(result);
   });
 });

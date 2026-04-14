@@ -9,11 +9,15 @@ body {
     font-style: normal;
 } 
 
+.programok {
+  text-align: center;
+}
+
 #program-cim{
   text-align: left;
   background-color: rgb(3, 164, 164, 0.37);
   padding: 20px;
-  margin: 0px 50px;
+  margin: 50px 50px;
   border-radius: 25px;
   width: 225px;
   height: 85px;
