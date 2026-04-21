@@ -211,14 +211,12 @@ h1
 }
 
 .mySlides img {
-    vertical-align: middle;
+    height: 900px;
 }
 
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
-  margin: auto;
-  padding: 20px;
+  margin-bottom: 30px;
   box-sizing:border-box
 }
 
