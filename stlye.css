@@ -373,6 +373,7 @@ footer
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+  margin: 20px 0px;
 }
 #keresokep
 {
@@ -394,9 +395,7 @@ footer
 }
 #talalat
 {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
+  
 
 
 }
