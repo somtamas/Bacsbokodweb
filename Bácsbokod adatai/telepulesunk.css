@@ -41,9 +41,9 @@ body{
 /* története */
 
 .tortenete{
-    padding:80px 20px;
-    max-width:1400px;
-    margin:auto;
+    padding: 80px 20px;
+    max-width: 1400px;
+    margin: auto;
 }
 
 /* Kártyák */
@@ -67,9 +67,22 @@ body{
     height: 200px;
     color: white;
 }
+
 .kartya img{
     width: 200px;
-    height: 120px;
+    height: 150px;
+}
+
+
+.hatalyos{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    font-size: larger;
+}
+
+.kartya p{
+    
 }
 
 .kartyakep{
@@ -78,13 +91,35 @@ body{
     padding: 1px 1px;
 }
 
-.hatalyos{
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    font-size: larger;
-    
+
+
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
+.kepszoveg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 240px;
+    background-color: #153531;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Reszponzivitás */
