@@ -7,7 +7,9 @@ body {margin:0;font-family:Arial}
   flex-direction: row;
   overflow: hidden;
   background-color: #153531;
-  text-align: center;
+  /* text-align: center; */
+  margin: auto;
+  width: 75%;
 }
 
 .topnav a {

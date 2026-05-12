@@ -2,6 +2,10 @@ body {
     padding: 0;
     margin: 0;
 }
+#cimer
+{
+  width: 50px;
+}
 
 .mukta-regular {
   font-family: "Mukta", sans-serif;
@@ -22,8 +26,14 @@ body {
   border-bottom: 3px solid #193269;
   display: inline-block;
   padding-bottom: 5px;
-  margin-left: 4%;
+  margin-left: 13%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: min-content;
+  height: 50px;
 }
+
 
 
 .headland {
@@ -436,4 +446,90 @@ footer
   background-color: #153531;
   height: 50px;
   margin-bottom: 5%;
+}
+/* Globális alapozás a reszponzivitáshoz */
+.premium-card {
+  max-width: 380px;
+  background-color: #153531;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px;
+}
+
+/* Lebegés (hover) effektus */
+.premium-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Kép konténer és a kép formázása */
+.image-container {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.premium-card:hover .image-container img {
+  transform: scale(1.05);
+}
+
+/* Szöveges tartalom konténer */
+.content-container {
+  padding: 24px;
+}
+
+/* Kis címke a főcím felett */
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fbd3da;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Főcím */
+.card-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+}
+
+/* Leíró szöveg */
+.card-text {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+}
+
+/* Akció gomb */
+.card-button {
+  display: inline-block;
+  background-color: #fbd3da;
+  color: #153531;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Gomb lebegés effektus */
+.card-button:hover {
+  background-color: #ffffff;
+  color: #153531;
 }
