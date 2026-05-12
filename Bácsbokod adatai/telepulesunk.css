@@ -61,8 +61,8 @@ body{
 
     background:white;
     /* padding: 10px; */
-    border: 1px solid black;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    /* border: 1px solid black; */
+    /* box-shadow:0 10px 25px rgba(0,0,0,0.1); */
     width: 200px;
     height: 200px;
     color: white;
@@ -82,7 +82,7 @@ body{
 }
 
 .kartya p{
-    
+
 }
 
 .kartyakep{
@@ -96,31 +96,40 @@ body{
 .container {
     position: relative;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: white;
   }
 
-.kepszoveg{
+.kepcim{
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 240px;
-    background-color: #153531;
+    font-size: 30px;
+}
+.kepszoveg{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    width: 600px;
 }
 
+.kep{
+    width: 230px;
+    height: 230px;
+}
 
+.hatyalyosrendeletekkep{
+    width: 80%;
+    height: 800px;
+    display: block;
+    margin: auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.hatyalyosrendeletek{
+    
+}
 
 /* Reszponzivitás */
 
