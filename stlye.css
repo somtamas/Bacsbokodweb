@@ -229,6 +229,27 @@ footer
     /* cursor: pointer; */
     width: 35%;
 }
+#programok_elso
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#progrmok_utolso
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+@media(max-width: 850px)
+{
+  #programok_elso
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 
 .card:hover {
