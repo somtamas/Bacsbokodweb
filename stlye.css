@@ -57,13 +57,14 @@ body {
 }
 
 #galeriafocim {
-  text-align: left;
-  background-color: rgb(3, 164, 164, 0.37);
-  padding: 20px;
-  margin: 0px 50px 50px 50px;
-  border-radius: 25px;
-  width: 170px;
-  height: 85px;
+  text-align: center;
+    background-color: #153531;
+    padding: 20px;
+    margin: 35px 50px 50px 50px;
+    border-radius: 25px;
+    width: 170px;
+    /* height: 85px; */
+    color: #fbd3da;
 }
 
 .programok p{
@@ -299,10 +300,11 @@ footer
 #hosszuVonal
 {
     border: none;
-    border-top: 3px solid black;
+    border-top: 3px solid #fbd3da;
     margin: 5%;
     width: 59%;
     display: inline-block;
+    margin-left: 21%;
 }
 .galeriacim p
 {
@@ -311,18 +313,18 @@ footer
 }
 #Hozzaszolasok
 {
-  background-color: #393939;
-  padding: 5%;
-  margin-top: 15%;
+    background-color: #153531;
+    padding: 5%;
+    margin-top: 15%;
 }
 #HozzaszolasCim
 {
-  background-color: rgba(3, 164, 164, 0.37);
-  padding: 1px;
-  width: min-content;
-  text-align: left;
-  border-radius: 10px;
-  font-size: larger;
+     background-color: #fbd3da;
+    padding: 1px;
+    width: min-content;
+    text-align: left;
+    border-radius: 10px;
+    font-size: larger;
 }
 #HozzaszolasCim p
 {
@@ -333,15 +335,15 @@ footer
   text-align: left;
   margin: 5%;
   padding: 5%;
-  background-color: #777372;
+  background-color: white;
 }
 .hozzaszolas p 
 {
-  color: white;
+  color: #153531;
 }
 .hozzaszolas h2
 {
-  color: white;
+  color: #153531;
 }
 
 
@@ -432,7 +434,7 @@ footer
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-  margin: 20px 0px;
+  
 }
 #keresokep
 {
