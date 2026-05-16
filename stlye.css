@@ -60,11 +60,11 @@ body {
   text-align: center;
     background-color: #153531;
     padding: 20px;
-    margin: 35px 50px 50px 50px;
+    margin: 0px 50px 50px 50px;
     border-radius: 25px;
     width: 170px;
     /* height: 85px; */
-    color: #fbd3da;
+    color: white;
 }
 
 .programok p{
@@ -219,6 +219,46 @@ footer
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+@media  (max-width: 550px) {
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+
+  }
+
+  
+}
+#bacsbokod2cimek
+{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#icnonok
+{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#icnonok2
+{
+  margin-left: 8%;
+    display: flex;
+    align-items: flex-start;
+    /* margin-right: 13%; */
+    background-color: #8080802e;
+    width: 50%;
+    padding-left: 14%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    flex-direction: column;
+}
+
 
 
 .card {
@@ -229,6 +269,12 @@ footer
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     /* cursor: pointer; */
     width: 35%;
+}
+@media (max-width: 550px) {
+
+  .card {
+    width: 80%;
+  }
 }
 #programok_elso
 {
@@ -329,6 +375,7 @@ footer
 #HozzaszolasCim p
 {
   margin: 15px;
+  
 }
 .hozzaszolas
 {
@@ -345,7 +392,61 @@ footer
 {
   color: #153531;
 }
-
+#keresoicon
+{
+      width: 26px;
+    padding: 5px;
+    border: solid 4px #ffffff6e;
+    border-radius: 100%;
+    margin-right: 3%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#keresologo
+{
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-family: 'Georgia', serif;
+    border-bottom: 2px solid #ffffff;
+    font-family: 'Georgia', serif;
+    /* margin-right: 61%; */
+    position: absolute;
+    right: 80%;
+    /* padding-left: 1%; */
+    margin-left: 5%;
+}
+@media (max-width: 1000px) 
+{
+  #keresologo
+  {
+    position: absolute;
+    right: 70%;
+  }
+}
+@media (max-width: 700px) 
+{
+  #keresologo
+  {
+    display: none;
+  }
+}
+@media (max-width: 700px) 
+{
+  #cim2
+  {
+    font-size: 32px;
+    margin-left: 5%;
+  }
+}
+@media (max-width: 600px) 
+{
+  #cim2
+  {
+    display: none;
+  }
+}
 
 
 
@@ -468,7 +569,9 @@ footer
   width: 100%;
   background-color: #153531;
   height: 50px;
-  margin-bottom: 5%;
+  
+  display: flex;
+  flex-direction: row-reverse;
 }
 /* Globális alapozás a reszponzivitáshoz */
 .premium-card {
