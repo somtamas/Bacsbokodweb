@@ -238,6 +238,19 @@ footer
     justify-content: space-between;
 
 }
+@media (max-width: 550px) {
+  #bacsbokod2cimek
+  {
+   display: none;
+
+   
+  }
+  #keresolec
+  {
+    margin-bottom: 5%;
+  }
+
+}
 #icnonok
 {
   display: flex;
