@@ -609,7 +609,7 @@ body{
     font-size: 26px;
 }
 
-input {
+.popupok input {
     width: 100%;
     margin: 12px 0;
     padding: 14px;
@@ -619,7 +619,7 @@ input {
     transition: 0.2s;
 }
 
-input:focus {
+.popupok input:focus {
     outline: none;
     border-color: #153531;
     box-shadow: 0 0 8px rgba(0, 174, 255, 0.4);

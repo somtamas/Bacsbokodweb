@@ -6,6 +6,7 @@ function regisztracio(){
 
   localStorage.setItem("nev",nev);
   localStorage.setItem("jelszo",jelszo);
+  localStorage.setItem("belepve", "igen");
   document.querySelector(".popupok").style.display = "none";
 }
 
@@ -16,6 +17,7 @@ function bejelentkezes(){
   let mentettJelszo = localStorage.getItem("jelszo");
 
   if(nev == mentettNev && jelszo == mentettJelszo){
+    localStorage.setItem("belepve", "igen");
     document.querySelector(".popupok").style.display = "none";
   }
   else{
@@ -23,9 +25,12 @@ function bejelentkezes(){
   }
 }
 
+localStorage.setItem("belepve", "igen");
 
-setTimeout(() => {
+if(localStorage.getItem("belepve") != "igen"){
+  setTimeout(() => {
   document.querySelector(".popupok").style.display = "flex";
   console.log(localStorage.getItem("nev"));
   console.log(localStorage.getItem("jelszo"));
 }, 3000);
+}
