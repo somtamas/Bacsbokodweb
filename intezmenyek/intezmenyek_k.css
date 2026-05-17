@@ -3,6 +3,7 @@ body{
     background: white  ;
     background-attachment: fixed;
     margin: 0;
+    background-color: #fbd3da;
 }
 .headland {
     font-family: "Headland One", serif;
@@ -11,31 +12,31 @@ body{
 }  
 .nyitvatartas
 {
-    text-align: left;
-   
+   text-align: left;
     padding: 25px;
-    
-    height: min-content; 
-    background-color: rgba(217, 217, 217, 0.35);
-    border-radius: 25px;
-    margin-left: 25%;
-    margin-right: 22%;
+    height: min-content;
+    background-color: white;
+    border-radius: 6px;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 5%;
     margin-bottom: 5%;
+    color: #153531;
+    border: solid #fbd3da 5px;
 }
 .Leiras 
 {
     text-align: left;
-   
     padding: 25px;
-  
     height: min-content;
-    background-color: rgba(217, 217, 217, 0.35);
-    border-radius: 25px;
-    margin-left: 25%;
-    margin-right: 22%;
+    background-color: white;
+    border-radius: 6px;
+    margin-left: 20%;
+    margin-right: 20%;
     margin-top: 5%;
     margin-bottom: 5%;
+    color: #153531;
+    border: solid #fbd3da 5px;
 }
 #tartalom
 {
@@ -46,6 +47,8 @@ body{
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    background-color: #153531;
+    margin-top: 5%;
         
     
     
@@ -90,16 +93,18 @@ body{
 
 #cim
 {
-    padding: 25px;
+    padding: 7px;
     height: min-content;
-    background-color: rgba(3, 164, 164, 0.37);
-    border-radius: 25px;
+    background-color: #153531;
+    /* border-radius: 25px; */
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 5%;
     margin-bottom: 5%;
     text-align: center;
     font-size: small;
+    color: white;
+    border: solid #fbd3da 5px;
 }
 @media (max-width: 875px) 
 {
@@ -213,9 +218,12 @@ h1
 
 .mySlides img {
   width: 100%;
-  height: clamp(320px, 42vw, 520px);
-  object-fit: cover;
-  display: block;
+    height: clamp(320px, 42vw, 520px);
+    object-fit: cover;
+    display: block;
+    /* color: #fbd3da; */
+    background-color: #153531;
+    padding: inherit;
 }
 
 .slideshow-container {
