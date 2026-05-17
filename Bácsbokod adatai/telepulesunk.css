@@ -1,5 +1,4 @@
 body{
-    /* background-image:  linear-gradient(#FFFFFF,#008080); */
     display: block; 
     background-attachment: fixed;
     margin: 0px;
@@ -28,126 +27,343 @@ body{
     padding:20px;
 }
 
+/* cim */
 
+.telepulesCim{
+    margin-left: 10%;
+    max-width: 800px;
+    color: #153531;
+    padding: 40px 0px 40px 0px;
+    font-size: 15px;
+}
 
-.cim{
-    text-align: center;
-    background-color: rgba(3, 164, 164, 37%);
-    border-radius: 8px;
-    padding: 1px;
-    margin: 4% 30%;
+@media (max-width: 800px) {
+    .telepulesCim{
+        margin-left: 5%;
+    }
 }
 
 /* története */
 
-.tortenete{
-    padding: 80px 20px;
-    max-width: 1400px;
-    margin: auto;
-}
-
-/* Kártyák */
-
-.kartyak{
-    display: grid;
-    gap: 40px;
-}
-
-.kartya{
-    /* background:white;
-    padding: 40px;
-    border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1); */
-
-    background:white;
-    /* padding: 10px; */
-    /* border: 1px solid black; */
-    /* box-shadow:0 10px 25px rgba(0,0,0,0.1); */
-    width: 200px;
-    height: 200px;
-    color: white;
-}
-
-.kartya img{
-    width: 200px;
-    height: 150px;
-}
-
-
-.hatalyos{
+.tortenetVaz{
     display: flex;
-    gap: 40px;
+    gap: 30px;
+    margin-bottom: 60px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.tortenetAdatok{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.tortenetAdatok p, li{
+    color: #ff5f63;
+}
+
+.elsoTortenetIkon{
+    background-image: url(/Képek/térkép.png);
+    background-size: cover;
+    background-position: center;
+    max-width: 80px;
+    height: 80px;
+}
+
+.elsoTortenet{
+    background-color: #fbd3da;
+    max-width: 200px;
+    padding: 20px;
+}
+.elsoTortenet h2{
+    color:#fa5555;
+}
+
+.masodikTortenet{
+    background-color: #fbd3da;
+    max-width: 200px;
+    padding: 20px;
+}
+
+.masodikTortenetIkon{
+    background-image: url(/Képek/leirás\ icon.png);
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+    max-width: 80px;
+}
+
+.tortenete{
+    display: flex;
     justify-content: center;
-    font-size: larger;
+    justify-content: flex-start;
+    border: 1px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    height: 600px;
 }
 
-.kartya p{
-
-}
-
-.kartyakep{
-    height: 100px;
-    width: 100px;
-    padding: 1px 1px;
-}
-
-
-
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-
-.kepcim{
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-}
-.kepszoveg{
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 13px;
+.tortenetKep{
+    background-image: url(/Képek/telepulestorenete.png);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
     width: 600px;
+    min-width: 400px;
 }
 
-.kep{
-    width: 230px;
-    height: 230px;
+.tortenetSzoveg{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    justify-content: flex-start;
+    justify-content: center;
+    padding-left: 15px;
 }
 
-.hatyalyosrendeletekkep{
-    width: 80%;
-    height: 800px;
-    display: block;
-    margin: auto;
+.tortenetSzoveg h2{
+    color: #153531;
 }
+
+@media (max-width: 1200px) {
+    .telepulesCim{
+        margin-left: 3%;
+    }
+    .tortenetVaz{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .tortenetSzoveg{
+        font-size: 14px;
+    }
+    .tortenetKep{
+        height: 500px;
+        width: 500px;
+        min-width: 300px;
+        min-height: 300px;
+    }
+    .tortenete{
+        height: 500px;
+    }
+    .elsoTortenetIkon .masodikTortenetIkon{
+        width: 80px;
+        min-width: 60px;
+        height: 80px;
+        min-height: 60px;
+    }
+
+    .elsoTortenet{
+        padding: 10px;
+    }
+
+    .masodikTortenet{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .tortenete{
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        width: 600px;
+        justify-content: center;
+        align-items: center;
+    }
+    .tortenetKep{
+        width: 450px;
+        height: 350px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .tortenetVaz{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tortenetKep{
+        max-width: 100%;
+        max-height: 100%;
+        min-height: 50px;
+        height: 200px;
+    }
+    .tortenete{
+        margin-top: 20px;
+        height: 650px;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+    }
+    .tortenetSzoveg{
+        max-width: 400px;
+        min-width: 300px;
+        font-size: 14px;
+    }
+    .elsoTortenet, .masodikTortenet{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 510px) {
+    .tortenetSzoveg{
+        font-size: 12px;
+    }
+}
+
+/* rendeletek */
 
 .rendeletek{
     background-image: url(/Képek/bacsbokodfellulrol.png);
+    background-size: cover;
+    background-position: center;
     width: 80%;
-    height: 800px;
-    display: block;
+    min-height: 800px;
     margin: auto;
     color: white;
     text-align: center;
     position: relative;
+    margin-bottom: 100px;
 }
 
-.hatyaloscim{
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
+.rendeletekTartalom{
+    position: relative;
+    z-index: 3;
+    padding: 80px 40px 40px 40px;
 }
 
-/* Reszponzivitás */
+.rendeletekCim{
+    font-size: 42px;
+    margin-bottom: 15px;
+}
 
+.rendeletekSzoveg{
+    margin: 0 auto 200px;
+    max-width: 800px;
+}
+
+.rendeletKartyak{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 18px;
+}
+
+.rendeletKartya{
+    height: 260px;
+    padding: 28px 18px;
+    text-align: left;
+    background-color: rgba(80, 80, 80, 0.55);
+}
+
+.rendeletkep{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 25px;
+    border: 3px solid white;
+    border-radius: 8px;
+    background-image:url(/Képek/hatalyos_r_img.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.rendeletKartya h3{
+    padding-bottom: 20px;
+}
+
+@media (max-width: 1400px) {
+    .rendeletKartyak{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .rendeletekSzoveg{
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 800px) {
+    .rendeletek{
+        width: 95%;
+    }
+    .rendeletKartyak{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .rendeletekSzoveg{
+        font-size: 18px;
+        margin-bottom: 80px;
+    }
+    .rendeletekCim{
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 450px) {
+    .rendeletKartyak{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* adatkezelés */
+
+.adatkezeles{
+    margin: 40px auto;
+    color: white;
+    background-color: #153531;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 900px;
+    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 40px;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+.adatkezelesKep{
+    background-image: url(/Képek/Infoblokk_TOP_Plusz\ 1.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 330px;
+    aspect-ratio: 1 / 1.1;
+
+}
+
+.adatkezelesSzoveg{
+    width: 100%;
+    max-width: 330px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (max-width: 1080px) {
+    .adatkezeles{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .adatkezelesSzoveg{
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .adatkezeles{
+        width: 95%;
+        padding: 25px;
+        min-height: 0px;
+    }
+    .adatkezelesSzoveg{
+        font-size: 16px;
+    }
+    .adatkezelesKep{
+        max-width: 280px;
+    }
+}
 
 /* pc */
 
