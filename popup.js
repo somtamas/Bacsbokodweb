@@ -3,11 +3,19 @@ document.querySelector(".popupok").style.display = "none";
 function regisztracio(){
   let nev = document.getElementById("regnevinput").value;
   let jelszo = document.getElementById("regjelszoinput").value;
+  let szamok = "0123456789";
 
-  localStorage.setItem("nev",nev);
-  localStorage.setItem("jelszo",jelszo);
-  localStorage.setItem("belepve", "igen");
-  document.querySelector(".popupok").style.display = "none";
+  if(jelszo.length >= 8 && szamok.split("").some(szam => jelszo.includes(szam)))
+  {
+    localStorage.setItem("nev",nev);
+    localStorage.setItem("jelszo",jelszo);
+    sessionStorage.setItem("belepve", "igen");
+    document.querySelector(".popupok").style.display = "none";
+  }
+  else{
+    alert("A jelszó nem felel meg a követelményeknek! (Minimum 8 karakter és minimum 1 szám)");
+    document.getElementById("regjelszoinput").value = "";
+  }
 }
 
 function bejelentkezes(){
@@ -17,7 +25,7 @@ function bejelentkezes(){
   let mentettJelszo = localStorage.getItem("jelszo");
 
   if(nev == mentettNev && jelszo == mentettJelszo){
-    localStorage.setItem("belepve", "igen");
+    sessionStorage.setItem("belepve", "igen");
     document.querySelector(".popupok").style.display = "none";
   }
   else{
@@ -25,12 +33,10 @@ function bejelentkezes(){
   }
 }
 
-localStorage.setItem("belepve", "igen");
-
-// if(localStorage.getItem("belepve") != "igen"){
+if(sessionStorage.getItem("belepve") != "igen"){
   setTimeout(() => {
   document.querySelector(".popupok").style.display = "flex";
   console.log(localStorage.getItem("nev"));
   console.log(localStorage.getItem("jelszo"));
 }, 3000);
-// }
+}

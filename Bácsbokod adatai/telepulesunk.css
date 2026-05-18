@@ -274,7 +274,7 @@ body{
     padding-bottom: 20px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
     .rendeletKartyak{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -299,7 +299,7 @@ body{
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
     .rendeletKartyak{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -336,14 +336,24 @@ body{
 .adatkezelesSzoveg{
     width: 100%;
     max-width: 330px;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 15px;
+}
+
+.adatkezeles h4{
+    color: #A8C93B;
+}
+
+.adatkezelesVonal{
+    width: 140px;
+    height: 5px;
+    background: #A8C93B;
+    border-radius: 20px;
 }
 
 @media (max-width: 1080px) {
     .adatkezeles{
         flex-direction: column;
-        text-align: center;
+        /* text-align: center; */
         gap: 30px;
     }
     .adatkezelesSzoveg{
