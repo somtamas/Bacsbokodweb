@@ -27,10 +27,10 @@ function bejelentkezes(){
 
 localStorage.setItem("belepve", "igen");
 
-if(localStorage.getItem("belepve") != "igen"){
+// if(localStorage.getItem("belepve") != "igen"){
   setTimeout(() => {
   document.querySelector(".popupok").style.display = "flex";
   console.log(localStorage.getItem("nev"));
   console.log(localStorage.getItem("jelszo"));
 }, 3000);
-}
+// }

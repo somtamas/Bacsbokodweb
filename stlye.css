@@ -672,3 +672,88 @@ footer
   background-color: #ffffff;
   color: #153531;
 }
+
+
+
+.popupok {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(6px);
+}
+
+.popup {
+  width: 55%;
+  max-width: 520px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 20px;
+  padding: 40px 35px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+  animation: fadeIn 0.35s ease;
+  position: relative;
+}
+
+.popupCim {
+  margin: 0 0 15px;
+  color: #153531;
+  font-size: 26px;
+}
+
+.popupok input {
+  width: 100%;
+  margin: 12px 0;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.popupok input:focus {
+  outline: none;
+  border-color: #153531;
+  box-shadow: 0 0 8px rgba(0, 174, 255, 0.4);
+}
+
+.popupok button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #153531, #1e7264);
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.2s;
+}
+
+.popupok button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.link {
+  margin-top: 18px;
+  color: #153531;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  font-size: 14px;
+}
+
+.rejtett {
+  display: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}

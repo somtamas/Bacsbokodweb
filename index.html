@@ -361,7 +361,28 @@
 
 
 
+<div class="popupok">
+  <div class="popup" id="bejelentkezoPopup">
+      <div class="popupdekoracio"></div>
+      <h2 class="popupCim">Örülünk, hogy újra itt vagy!</h2>
+      <div class="szoveg">Jelentkezz be a fiókodba</div>
+      <input type="text" id="bejnevinput" placeholder="Felhasználónév">
+      <input type="password" id="bejjelszoinput" placeholder="Jelszó">
+      <button onclick="bejelentkezes()">Bejelentkezés</button>
+      <span class="link" onclick="regisztracioraValtas()">Még nincs fiókja? Regisztráció</span>
+  </div>
 
+  <div class="popup rejtett" id="regisztraloPopup">
+      <div class="popupdekoracio"></div>
+      <h2 class="popupCim">Fiók létrehozása</h2>
+      <div class="szoveg">Csatlakozz hozzánk pillanatok alatt</div>
+      <input type="text" id="regnevinput" placeholder="Felhasználónév">
+      <input type="password" id="regjelszoinput" placeholder="Jelszó">
+      <button onclick="regisztracio()">Fiók létrehozása</button>
+      <span class="link" onclick="bejelentkezesrevaltas()">Van már fiókja? Bejelentkezés</span>
+  </div>
+</div>
+<script src="/popup.js"></script>
 
 
 
@@ -430,5 +451,17 @@
 </script>
 <script src="./slideshow.js"></script>
 <script src="/main.js"></script>
+<script>
+  function regisztracioraValtas() {
+      document.getElementById('bejelentkezoPopup').classList.add('rejtett');
+      document.getElementById('regisztraloPopup').classList.remove('rejtett');
+  }
+  
+  function bejelentkezesrevaltas() {
+      document.getElementById('regisztraloPopup').classList.add('rejtett');
+      document.getElementById('bejelentkezoPopup').classList.remove('rejtett');
+  }
+  
+  </script>
 </body>
 </html>
