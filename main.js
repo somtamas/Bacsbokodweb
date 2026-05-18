@@ -34,23 +34,40 @@ function showModalSlides(n) {
 }
 // kereső//
 
-function kereso()
-{
-  let adatok = ["Adatkezelési tájékoztató", "Hatályos rendeletek","Bácsbokodi Kultúrház","Háziorvosi rendelő","Posta","Óvoda","Templom","Falumúzeum","Galéria","Programok"]
-
-
-  szo = document.getElementById("input").value
-
-  let talalatok = adatok.filter(adatok=>adatok.toLocaleLowerCase().includes(szo.toLocaleLowerCase()))
-  console.log(talalatok)
-  
-  
-
-
-
-
-
+const pages = [
+  { keys: ["ovoda", "gyermek", "iskola", "óvoda", "gyermekotthon", "gyerekek"], url: "../intezmenyek/Ovoda.html" },
+  { keys: ["history", "története", "hatályos rendeletek", "adatvédelem", "telepules", "adat", "adatkezelés"], url: "../Bácsbokod adatai/telepulesunk.html" },
+  { keys: ["tájház", "falu", "érdekesség", "múzeum"], url: "../intezmenyek/Falumuzeum.html" },
+  { keys: ["levél", "posta"], url: "../intezmenyek/Posta.html" },
+  { keys: ["templom", "vallás", "egyházi", "templomok"], url: "../intezmenyek/Templom.html" },
+  { keys: ["háziorvos", "orvosi rendelő", "orvos", "rendelő"], url: "../intezmenyek/OrvosiRendelo.html" },
+  { keys: ["kultúrközpont", "községház", "kultúrház", "kulturális"], url: "../intezmenyek/kulturhaz.html" },
+];
+function normalize(text) {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
 }
+
+function kereso() {
+  const value = normalize(document.getElementById("input").value);
+
+  for (let page of pages) {
+    if (page.keys.some(k => value.includes(normalize(k)))) {
+      window.location.href = page.url;
+      return;
+    }
+  }
+
+  alert("Nincs találat!");
+}
+
+
+
+
+
+
 
 
 
