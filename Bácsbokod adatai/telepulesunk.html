@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/stlye.css">
     <link rel="stylesheet" href="/intezmenyek/intezmenyek_k.css"> <!--A slideshownak a css-e van benne-->
     <link rel="stylesheet" href="/navbar próba/navbar.css">
-    <link rel="stylesheet" href="/main.js">
+    
     
 </head>
 <body class="headland">
@@ -233,6 +233,37 @@
 </div>
 <script src="/popup.js"></script> -->
 <script>
+const pages = [
+  { keys: ["ovoda", "gyermek", "iskola", "óvoda", "gyermekotthon", "gyerekek"], url: "/intezmenyek/Ovoda.html" },
+  { keys: ["history", "története", "hatályos rendeletek", "adatvédelem", "telepules", "adat", "adatkezelés"], url: "/Bácsbokod adatai/telepulesunk.html" },
+  { keys: ["tájház", "falu", "érdekesség", "múzeum"], url: "/intezmenyek/Falumuzeum.html" },
+  { keys: ["levél", "posta"], url: "/intezmenyek/Posta.html" },
+  { keys: ["templom", "vallás", "egyházi", "templomok"], url: "/intezmenyek/Templom.html" },
+  { keys: ["háziorvos", "orvosi rendelő", "orvos", "rendelő"], url: "/intezmenyek/OrvosiRendelo.html" },
+  { keys: ["kultúrközpont", "községház", "kultúrház", "kulturális"], url: "/intezmenyek/kulturhaz.html" },
+];
+function normalize(text) {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+}
+
+function kereso() {
+  const value = normalize(document.getElementById("input").value);
+
+  for (let page of pages) {
+    if (page.keys.some(k => value.includes(normalize(k)))) {
+      window.location.href = page.url;
+      return;
+    }
+  }
+
+  alert("Nincs találat!");
+}
+
+
+
 
 // menu      
 function myFunction() {
