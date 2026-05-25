@@ -375,6 +375,16 @@ body{
     }
 }
 
+/* Térkép */
+
+#bacsbokodTerkep{
+    margin: auto;
+    width: 70%;
+    height: 600px;
+    border-radius: 12px;
+    margin-bottom: 60px;
+}
+
 /* pc */
 
 @media(min-width:900px){
