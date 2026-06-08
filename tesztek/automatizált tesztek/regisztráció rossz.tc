@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>regisztráció rossz</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>36b6b0f5-f327-4f04-8c2a-a0fce4f535bd</testCaseGuid>
-</TestCaseEntity>
